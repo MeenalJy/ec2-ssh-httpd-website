@@ -1,4 +1,4 @@
-#AIM - Setting up and Hosting a Website on an EC2 Instance using SSH.
+# AIM - Setting up and Hosting a Website on an EC2 Instance using SSH.
 #Pre-requisites:-
 1.	AWS account.
 2.	Running EC2 instance which has security roles of HTTP(Edit the inbound rules to allow incoming traffic on port 80 (HTTP) from any IP address (0.0.0.0/0) or specify your desired IP range.)
