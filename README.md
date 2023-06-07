@@ -1,12 +1,11 @@
-Project-1 
-##AIM - Setting up and Hosting a Website on an EC2 Instance using SSH.
-##Pre-requisites:-
+#AIM - Setting up and Hosting a Website on an EC2 Instance using SSH.
+#Pre-requisites:-
 1.	AWS account.
 2.	Running EC2 instance which has security roles of HTTP(Edit the inbound rules to allow incoming traffic on port 80 (HTTP) from any IP address (0.0.0.0/0) or specify your desired IP range.)
 3.	PuTTY installed on your Windows machine.
-##INTRODUCTION 
+#INTRODUCTION 
 In this project, I will guide you through the process of connecting to an EC2 instance using SSH and setting up an Apache HTTP server (httpd) to host a small website. 
-##STEPS
+#STEPS
 1.	Connecting to the EC2 Instance via SSH:
 i.	Launch PuTTY.
 ii.	In the "Category" pane on the left, expand the "Connection" category, then select "SSH".
@@ -38,35 +37,10 @@ sudo mkdir /var/www/html/mywebsite
 ii.	Move into the website directory:
 cd /var/www/html/mywebsite
 iii.	Create an index.html file or upload your website files to this directory.
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Small Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    
-    h1 {
-      color: #333;
-    }
-    
-    p {
-      color: #666;
-    }
- </style>
-</head>
-<body>
- <h1>Welcome to Meenal’s Website</h1>
- <p>This is a sample webpage hosted on an EC2 instance using HTTPD.</p>
-</body>
-</html>
 4.	Access Your Website
 i.	Open a web browser on your local machine and enter the public IP address or DNS name of your EC2 instance.
 ii.	You should now be able to access and view your small website.
- 
-Congratulations! You have successfully connected to an EC2 instance using SSH and installed and configured HTTPD to host a small website. You can now continue to develop and enhance your website on the EC2 instance.
+#Congratulations! You have successfully connected to an EC2 instance using SSH and installed and configured HTTPD to host a small website. You can now continue to develop and enhance your website on the EC2 instance.
 
 
 
