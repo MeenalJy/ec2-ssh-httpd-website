@@ -1,12 +1,13 @@
-# AIM - Setting up and Hosting a Website on an EC2 Instance using SSH.
-#Pre-requisites:-
+# AIM 
+Setting up and Hosting a Website on an EC2 Instance using SSH.
+# Pre-requisites:-
 1.	AWS account.
 2.	Running EC2 instance which has security roles of HTTP(Edit the inbound rules to allow incoming traffic on port 80 (HTTP) from any IP address (0.0.0.0/0) or specify your desired IP range.)
 3.	PuTTY installed on your Windows machine.
-#INTRODUCTION 
+# INTRODUCTION 
 In this project, I will guide you through the process of connecting to an EC2 instance using SSH and setting up an Apache HTTP server (httpd) to host a small website. 
-#STEPS
-1.	Connecting to the EC2 Instance via SSH:
+# STEPS
+1. Connecting to the EC2 Instance via SSH:
 i.	Launch PuTTY.
 ii.	In the "Category" pane on the left, expand the "Connection" category, then select "SSH".
 iii.	In the "Host Name (or IP address)" field, enter the public IP address or DNS name of your EC2 instance.
