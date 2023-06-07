@@ -23,9 +23,7 @@ icacls <file> /grant John:F
 xii.	Congratulations! You are now connected to your EC2 instance via SSH using PuTTY.  
 2.	Install and Configure HTTPD  
 i.	Once connected to the EC2 instance, run the following command to update the package repository:  
-''' bash
-  sudo yum update -y
-  '''  
+ ' sudo yum update -y '  
 ii.	Install the Apache HTTP Server (HTTPD) by running the following command:  
 'sudo yum install httpd -y'  
 iii.	Start the HTTPD service by running the following command:  
