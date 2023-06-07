@@ -1,12 +1,12 @@
 Project-1 
 ##AIM - Setting up and Hosting a Website on an EC2 Instance using SSH.
-Pre-requisites:-
+##Pre-requisites:-
 1.	AWS account.
 2.	Running EC2 instance which has security roles of HTTP(Edit the inbound rules to allow incoming traffic on port 80 (HTTP) from any IP address (0.0.0.0/0) or specify your desired IP range.)
 3.	PuTTY installed on your Windows machine.
-INTRODUCTION 
+##INTRODUCTION 
 In this project, I will guide you through the process of connecting to an EC2 instance using SSH and setting up an Apache HTTP server (httpd) to host a small website. 
-STEPS
+##STEPS
 1.	Connecting to the EC2 Instance via SSH:
 i.	Launch PuTTY.
 ii.	In the "Category" pane on the left, expand the "Connection" category, then select "SSH".
@@ -31,19 +31,13 @@ iii.	Start the HTTPD service by running the following command:
 sudo service httpd start
 iv.	Enable the HTTPD service to start automatically on system boot:
 sudo chkconfig httpd on
-v.	To test if the HTTPD service is running, open a web browser on your local machine and enter the public IP address or DNS name of your EC2 instance. You should see the Apache default test page.
-vi.	You should get something like this:
- 
-
-
+v.	To test if the HTTPD service is running, open a web browser on your local machine and enter the public IP address or DNS name of your EC2 instance. You should see the Apache default test page. 
 3.	Host a Small Website
 i.	Create a directory to store your website files:
 sudo mkdir /var/www/html/mywebsite
 ii.	Move into the website directory:
 cd /var/www/html/mywebsite
 iii.	Create an index.html file or upload your website files to this directory.
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +62,6 @@ iii.	Create an index.html file or upload your website files to this directory.
  <p>This is a sample webpage hosted on an EC2 instance using HTTPD.</p>
 </body>
 </html>
-
 4.	Access Your Website
 i.	Open a web browser on your local machine and enter the public IP address or DNS name of your EC2 instance.
 ii.	You should now be able to access and view your small website.
