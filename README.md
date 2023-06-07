@@ -23,19 +23,19 @@ icacls <file> /grant John:F
 xii.	Congratulations! You are now connected to your EC2 instance via SSH using PuTTY.  
 2.	Install and Configure HTTPD  
 i.	Once connected to the EC2 instance, run the following command to update the package repository:  
-sudo yum update -y  
+'sudo yum update -y'  
 ii.	Install the Apache HTTP Server (HTTPD) by running the following command:  
-sudo yum install httpd -y  
+'sudo yum install httpd -y'  
 iii.	Start the HTTPD service by running the following command:  
-sudo service httpd start  
+'sudo service httpd start'  
 iv.	Enable the HTTPD service to start automatically on system boot:  
-sudo chkconfig httpd on  
+'sudo chkconfig httpd on'  
 v.	To test if the HTTPD service is running, open a web browser on your local machine and enter the public IP address or DNS name of your EC2 instance. You should see the Apache default test page.   
 3.	Host a Small Website  
 i.	Create a directory to store your website files:  
-sudo mkdir /var/www/html/mywebsite  
+'sudo mkdir /var/www/html/mywebsite'  
 ii.	Move into the website directory:  
-cd /var/www/html/mywebsite  
+'cd /var/www/html/mywebsite'  
 iii.	Create an index.html file or upload your website files to this directory.  
 4.	Access Your Website   
 i.	Open a web browser on your local machine and enter the public IP address or DNS name of your EC2 instance.  
